@@ -26,5 +26,9 @@ public class Compte {
 	public int getSolde() {
 		return this.solde;
 	}
-
+@Override
+public String toString() {
+	// TODO Auto-generated method stub
+	return "Numero de compte : "+this.numeroCompte+"\nSolde du compte : "+this.solde;
+}
 }

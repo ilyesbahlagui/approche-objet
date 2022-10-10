@@ -29,6 +29,6 @@ public class Compte {
 @Override
 public String toString() {
 	// TODO Auto-generated method stub
-	return "Numero de compte : "+this.numeroCompte+"\nSolde du compte : "+this.solde;
+	return "\nClass Compte => \n"+"Numero de compte : "+this.numeroCompte+"\nSolde du compte : "+this.solde;
 }
 }

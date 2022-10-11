@@ -1,6 +1,6 @@
 package fr.diginamic.banque;
 
-import java.util.Iterator;
+
 
 import fr.diginamic.banque.entites.Credit;
 import fr.diginamic.banque.entites.Debit;
@@ -17,9 +17,17 @@ public class TestOperation {
 		tab[1]=new Credit(12, "2019");
 		tab[2]=new Debit(17, "2022");
 		tab[3]=new Debit(9, "2021");
+		int somme=0;
 		for(int i=0;i<tab.length;i++) {
-			System.out.println(tab[i].toString());
+			System.out.println(tab[i].toString()+" Le type d'opération =>"+tab[i].getType());
+			if(tab[i].getType()=="CREDIT") {
+				somme=somme+ tab[i].getMontantOperation();
+			}
+			else {
+				somme=somme-tab[i].getMontantOperation();
+			}
 		}
+		System.out.println("Le montant total des opérations est => "+somme);
 	}
 
 }

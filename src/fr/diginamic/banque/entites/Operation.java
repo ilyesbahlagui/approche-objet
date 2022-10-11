@@ -8,9 +8,10 @@ public abstract class Operation {
 		 this.montantOperation=montantOperation;
 		 this.date=date;
 	}
-	 public int get() {
-		 return 15;
-	 }
+	 
+	 public abstract String getType();
+	 public abstract int getMontantOperation();
+	 
 	 @Override
 	public String toString() {
 		// TODO Auto-generated method stub

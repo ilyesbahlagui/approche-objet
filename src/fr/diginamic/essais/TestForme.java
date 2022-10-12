@@ -9,7 +9,7 @@ public class TestForme {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Carre oCarre=new Carre(5,50, 10);
+		Carre oCarre=new Carre(5);
 		Rectangle oRectangle=new Rectangle(14,20);
 		Cercle oCercle=new Cercle(5);
 		

@@ -15,7 +15,9 @@ public class Rectangle extends Forme{
 	}
 
 	public double calculerSurface() {
+		System.out.println("je suis dans rectangle");
 		return this.largeur * this.longeur;
+		
 	}
 
 	public double getLongeur() {

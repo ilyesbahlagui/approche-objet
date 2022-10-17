@@ -16,12 +16,23 @@ public class CreerFichier {
 		Path pathFile=Paths.get("C:\\work-space-java\\approche-objet\\src\\files\\recensement.csv");
 		List<String> lines= Files.readAllLines(pathFile, StandardCharsets.UTF_8);
 		
-		List<String> newFile= new ArrayList<>();
+		List<String> newFile= new ArrayList<String>();
 		
-//		for (int i = 0; i < 100; i++) {
-//			newFile.add(lines);
-//		}
-//		
-	}
+		for (int i = 0; i < 100; i++) {
+			newFile.add(lines.get(i)+"\n");
+		}
+		
+		System.out.println(newFile.size());
+//		System.out.println(newFile);
+		
+		Path pathCible= Paths.get("C:\\work-space-java\\approche-objet\\src\\files\\monFichier.txt");
+		Files.write(pathCible, newFile);
+		
+		
+		
+		List<String> lines2= Files.readAllLines(pathCible, StandardCharsets.UTF_8);
+		System.out.println(lines2);
+
+}
 
 }

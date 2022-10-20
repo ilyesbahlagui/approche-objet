@@ -1,9 +1,9 @@
 package fr.diginamic.recensement;
 
-import java.util.ArrayList;
+
 import java.util.Collections;
 import java.util.List;
-import java.util.Scanner;
+
 
 import fr.diginamic.recensement.comparator.ComparatorDixVille;
 
@@ -35,7 +35,7 @@ public class Ville_service extends MenuService {
 	public void getTop10Ville(Recensement recensement, String choix) {
 		List<Ville> oVille = recensement.getVille();
 
-		System.out.println(oVille);
+//		System.out.println(oVille);
 
 		Collections.sort(oVille, new ComparatorDixVille());
 		for (int i = 0; i < 10; i++) {

@@ -23,6 +23,7 @@ public class Region_service extends MenuService {
 		for (Ville element : oVille) {
 			
 			nomRegion = element.getNomRegion().replaceAll(" ", "-");
+
 //			System.out.println(nomRegion);
 			if (map.get(nomRegion) == null) {
 				map.put(nomRegion, new Region(nomRegion));
@@ -30,12 +31,12 @@ public class Region_service extends MenuService {
 			population=element.getPopulation();
 			
 			population=population+map.get(nomRegion).getPopulation();
+			
 			Region region=map.get(nomRegion);
 			region.setPopulation(population);
 			
-			
-
 		}
+		
 		
 		oRegion.addAll(map.values());
 

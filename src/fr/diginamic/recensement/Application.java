@@ -41,7 +41,7 @@ public class Application {
 				break;
 			}
 			case "2": {
-				System.out.println("Donner un departement(format xx) pour afficher sa population");
+				System.out.println("Donner un departement (format xx) pour afficher sa population");
 				choix = scanner.nextLine();
 				Departement_service nbPopulationDep = new Departement_service();
 				nbPopulationDep.getPopulation(recensement, choix);
@@ -67,7 +67,7 @@ public class Application {
 				break;
 			}
 			case "6": {
-				System.out.println("Donner le departement pour afficher ses 10 villes les plus peuplées ");
+				System.out.println("Donner le departement (format xx) pour afficher ses 10 villes les plus peuplées ");
 				choix = scanner.nextLine();
 				Departement_service dixVilleDep = new Departement_service();
 				dixVilleDep.getTop10Ville(recensement, choix);
@@ -88,6 +88,9 @@ public class Application {
 			}
 			case "9": {
 				console = false;
+			}
+			default:{
+				break;
 			}
 
 			}

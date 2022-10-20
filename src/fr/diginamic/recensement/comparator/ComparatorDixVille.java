@@ -2,7 +2,6 @@ package fr.diginamic.recensement.comparator;
 
 import java.util.Comparator;
 
-import fr.diginamic.recensement.Departement;
 import fr.diginamic.recensement.Ville;
 
 public class ComparatorDixVille implements Comparator<Ville>{

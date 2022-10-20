@@ -8,7 +8,7 @@ import java.util.List;
 import fr.diginamic.recensement.comparator.ComparatorDixDepMax;
 import fr.diginamic.recensement.comparator.ComparatorDixVille;
 
-public class Departement_service {
+public class Departement_service extends MenuService {
 
 	public void traiter(Recensement recensement) {
 
